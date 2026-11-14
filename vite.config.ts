@@ -28,6 +28,10 @@ export default defineConfig({
       workbox: { globPatterns: ['**/*.{js,css,html,svg,png,woff2}'] },
     }),
   ],
+  server: {
+    allowedHosts: ['word-switch1.onrender.com'],
+    host: '0.0.0.0',
+  },
   build: {
     target: 'es2022',
     rollupOptions: {
